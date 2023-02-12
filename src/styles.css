@@ -33,6 +33,12 @@ h1 {
     margin: 0;
 }
 
+section {
+    display: flex; /* Makes everything appear next to each other */
+    flex-direction: column; /* Makes everything stack on top of each other */
+    align-items: center;
+}
+
 .his-section {
     margin-top: 17vh; /* By using 17% of view per height, so however big the browser's height is, the margin top of this class would be 17% of that */
     text-align: center;
@@ -78,3 +84,17 @@ a {
     height: 33%;
 }
 
+.wave {
+    fill: rgb(0,0,0);
+    width: 100vw;
+    height: 65vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.social svg {
+    fill: rgb(255,255,255);
+    
+}
