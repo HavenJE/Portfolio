@@ -33,6 +33,19 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+h3 {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
 section {
     display: flex; /* Makes everything appear next to each other */
     flex-direction: column; /* Makes everything stack on top of each other */
@@ -52,9 +65,9 @@ footer {
     position: fixed; /* This keeps the footer position fixed on the bottom left with the bottom & left are both zero */
     bottom: 0;
     left: 0;
-
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 100vw; /* This makes the footer stuck in the center bottom when the page is minimized vertically */ 
 }
 
@@ -64,9 +77,21 @@ footer ul {
 
 }
 
+.option {
+    display: flex;
+}
+
+.option a {
+    margin: 40px 10px;
+}
+
 a {
     text-decoration: none;
     color: rgb(255,255,255);
+}
+
+a :hover {
+    color: aqua;
 }
 
 .socials {
@@ -97,4 +122,30 @@ a {
 .social svg {
     fill: rgb(255,255,255);
     
+}
+
+/* Study Page  */
+.study-details {
+    width: 50%;
+}
+
+.study-details td {
+    padding: 15px;
+}
+
+/* Mobile screen - As soon as the screen becomes  less than 600px, change the table to yellow */
+@media only screen and (max-width: 600px) {
+    .study-details {
+        /* background-color: yellow; */
+        width: 80%;
+    }
+
+    .study-details td {
+        padding: 5px;
+    }
+}
+
+/* To over-ride the fixed footer styling on top, we are going to position the .sub-pages-footer as relative */
+.sub-pages-footer {
+    position: relative;
 }
