@@ -36,6 +36,7 @@ h1 {
 h2 {
     margin: 0;
     font-weight: 300;
+    text-align: center;
 }
 
 h3 {
@@ -104,6 +105,14 @@ a :hover {
     top: 35vh; /* This will make it 30% from the top */
 }
 
+/* Setting the pink field to disappear on mobile screen 600px */
+@media only screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+}
+
+
 .social {
     width: 100%; 
     height: 33%;
@@ -112,7 +121,7 @@ a :hover {
 .wave {
     fill: rgb(0,0,0);
     width: 100vw;
-    height: 65vh;
+    height: 55vh;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -148,4 +157,16 @@ a :hover {
 /* To over-ride the fixed footer styling on top, we are going to position the .sub-pages-footer as relative */
 .sub-pages-footer {
     position: relative;
+}
+
+/* About Haven */
+.about-me {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    height: 150px;
+    margin: 40px 15px 15px 15px;
 }
