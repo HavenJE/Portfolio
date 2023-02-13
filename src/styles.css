@@ -46,9 +46,11 @@ h3 {
 
 .subtitle {
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 section {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex; /* Makes everything appear next to each other */
     flex-direction: column; /* Makes everything stack on top of each other */
     align-items: center;
