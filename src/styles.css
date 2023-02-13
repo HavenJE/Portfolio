@@ -34,13 +34,14 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 3px;
     font-weight: 300;
     text-align: center;
+    
 }
 
 h3 {
-    margin: 0;
+    margin: 3px;
 }
 
 .subtitle {
@@ -154,12 +155,7 @@ a :hover {
     }
 }
 
-/* To over-ride the fixed footer styling on top, we are going to position the .sub-pages-footer as relative */
-.sub-pages-footer {
-    position: relative;
-}
-
-/* About Haven */
+/* About page */
 .about-me {
     width: 50%;
     text-align: center;
@@ -170,3 +166,18 @@ a :hover {
     height: 150px;
     margin: 40px 15px 15px 15px;
 }
+
+
+.sub-pages-footer {
+    position: fixed;
+}
+
+/* To over-ride the fixed footer styling on top, we are going to position the .sub-pages-footer as relative */
+@media only screen and (max-width: 600px) {
+    .sub-pages-footer {
+        position: relative;
+    }
+    
+}
+
+/* Stack page */ 
