@@ -28,8 +28,8 @@ li {
 }
 
 h1 {
-    font-size: 160px;
-    font-weight: 700;
+    font-size: 70px;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -122,7 +122,7 @@ a :hover {
 .wave {
     fill: rgb(0,0,0);
     width: 100vw;
-    height: 55vh;
+    height: 50vh;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -180,4 +180,68 @@ a :hover {
     
 }
 
-/* Stack page */ 
+/* Contact page */ 
+.form-submit {
+    width: 50%;
+
+}
+
+.form-submit form {
+    width: 100%;
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 50%;
+    border: none;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.form-row .form-control:focus, 
+.form-submit textarea:focus {
+    outline: 0;
+    background-color: aqua;
+}
+
+.form-submit textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    border: none;
+    padding: 20px 0;
+    resize: none;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+form button {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    background-color: #51bd51;
+    color: rgb(255,255,255);
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-submit {
+        width: 80%;
+    }
+
+    .form-row .form-submit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+}
